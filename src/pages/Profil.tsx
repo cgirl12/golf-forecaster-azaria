@@ -24,11 +24,13 @@ const Profil = () => {
             {/* Profile Card */}
             <div className="glass-card rounded-3xl p-8 md:p-12 animate-fade-in text-center">
               {/* Avatar */}
-              <div className="mb-8">
-                <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary via-secondary to-accent flex items-center justify-center text-5xl font-heading font-bold text-primary-foreground shadow-lg">
-                  RAU
+                <div className="mb-8">
+                <img 
+                  src="/profil.jpeg" 
+                  alt="Ruth Azaria Ubro" 
+                  className="w-32 h-32 mx-auto rounded-full object-cover shadow-lg"
+                />
                 </div>
-              </div>
 
               {/* Name & Title */}
               <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
