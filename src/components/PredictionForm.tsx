@@ -91,8 +91,9 @@ const PredictionForm = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Cuaca */}
-          <div className="space-y-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {/* Cuaca */}
+            <div className="space-y-2">
             <label className="text-sm font-medium text-foreground flex items-center gap-2">
               <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
@@ -112,10 +113,10 @@ const PredictionForm = () => {
               <option value="MENDUNG">☁️ Mendung</option>
               <option value="HUJAN">🌧️ Hujan</option>
             </select>
-          </div>
+            </div>
 
-          {/* Temperatur */}
-          <div className="space-y-2">
+            {/* Temperatur */}
+            <div className="space-y-2">
             <label className="text-sm font-medium text-foreground flex items-center gap-2">
               <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M14 4v10.54a4 4 0 11-4 0V4a2 2 0 014 0z" />
@@ -134,10 +135,10 @@ const PredictionForm = () => {
               <option value="HANGAT">🌡️ Hangat</option>
               <option value="DINGIN">❄️ Dingin</option>
             </select>
-          </div>
+            </div>
 
-          {/* Kelembaban */}
-          <div className="space-y-2">
+            {/* Kelembaban */}
+            <div className="space-y-2">
             <label className="text-sm font-medium text-foreground flex items-center gap-2">
               <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
@@ -155,10 +156,10 @@ const PredictionForm = () => {
               <option value="TINGGI">💧 Tinggi</option>
               <option value="NORMAL">💨 Normal</option>
             </select>
-          </div>
+            </div>
 
-          {/* Berangin */}
-          <div className="space-y-2">
+            {/* Berangin */}
+            <div className="space-y-2">
             <label className="text-sm font-medium text-foreground flex items-center gap-2">
               <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2" />
@@ -176,6 +177,7 @@ const PredictionForm = () => {
               <option value="YA">🌬️ Ya (Berangin)</option>
               <option value="TIDAK">🍃 Tidak (Tidak Berangin)</option>
             </select>
+            </div>
           </div>
 
           {/* Submit Button */}
